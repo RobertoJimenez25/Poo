@@ -70,8 +70,10 @@ public class Automovil {
                 ", subMarca='" + subMarca + '\'' +
                 ", modelo=" + modelo +
                 ", color=" + color +
+                ", velocidad=" + velocidad +
                 '}';
     }
+
     public void acelerar() {
         velocidad += 10;
         System.out.println("EL automovil acelero. \n Velocidad actual: " + velocidad);
