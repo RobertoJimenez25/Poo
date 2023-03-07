@@ -3,24 +3,24 @@ import java.awt.*;
 public class Automovil {
      private String marca;
      private String subMarca;
-     private byte modelo; //2000 + byte
+     private byte modelo;
      private Color color;
-     private int velocidad;
+     private String estado;
 
     public Automovil() {
         marca = "";
         subMarca ="";
         modelo = 0;
         color = Color.RED;
-        velocidad = 0;
+        estado = "";
     }
 
-    public Automovil(String marca, String subMarca, byte modelo, Color color, int velocidad) {
+    public Automovil(String marca, String subMarca, byte modelo, Color color, String estado) {
         this.marca = marca;
         this.subMarca = subMarca;
         this.modelo = modelo;
         this.color = color;
-        this.velocidad = velocidad;
+        this.estado = estado;
     }
 
     public String getMarca() {
@@ -55,12 +55,12 @@ public class Automovil {
         this.color = color;
     }
 
-    public int getVelocidad() {
-        return velocidad;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setVelocidad(int velocidad) {
-        this.velocidad = velocidad;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     @Override
@@ -70,20 +70,20 @@ public class Automovil {
                 ", subMarca='" + subMarca + '\'' +
                 ", modelo=" + modelo +
                 ", color=" + color +
-                ", velocidad=" + velocidad +
+                ", estado=" + estado +
                 '}';
     }
 
-    public void acelerar() {
-        velocidad += 10;
-        System.out.println("EL automovil acelero. \n Velocidad actual: " + velocidad);
+    public void apagar() {
+        estado = "Apagado";
+        System.out.println("El Automovil esta: " + estado);
     }
-    public void frenar() {
-        velocidad -= 10;
-        System.out.println("El automovil freno. \n Velocidad actual: " + velocidad);
+    public void encender(){
+        estado = "Encendido";
+        System.out.println("El Automovil esta: " + estado);
     }
-    public void cambiarVelocidad(int nuevaVelocidad) {
-        velocidad = nuevaVelocidad;
-        System.out.println("Se cambio la velocidad del automovil a " + velocidad);
+    public void park(){
+        estado = "Parqueado";
+        System.out.println("El Automovil esta: " + estado);
     }
 }
