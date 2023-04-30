@@ -1,6 +1,4 @@
-package Tarea12.InterfacesGenericas.iu;
-
-import Tarea12.InterfacesGenericas.iu.Eventos.EventosRaton;
+package Tarea12.InterfacesGraficas.iu;
 
 import javax.swing.*;
 import java.awt.*;

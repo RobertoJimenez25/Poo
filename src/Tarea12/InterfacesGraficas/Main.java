@@ -1,6 +1,6 @@
-package Tarea12.InterfacesGenericas;
+package Tarea12.InterfacesGraficas;
 
-import Tarea12.InterfacesGenericas.iu.Principal;
+import Tarea12.InterfacesGraficas.iu.Principal;
 
 public class Main {
     public static void main(String[] args) {

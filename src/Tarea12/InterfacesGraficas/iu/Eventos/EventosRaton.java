@@ -1,4 +1,4 @@
-package Tarea12.InterfacesGenericas.iu.Eventos;
+package Tarea12.InterfacesGraficas.iu.Eventos;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
